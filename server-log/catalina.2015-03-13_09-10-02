@@ -1,0 +1,16 @@
+[13/Mar/2015 09:10:10] "GET / HTTP/1.1" 404 2022
+[13/Mar/2015 09:10:13] "GET /admin/ HTTP/1.1" 200 1865
+[13/Mar/2015 09:10:21] "POST /admin/ HTTP/1.1" 200 2025
+[13/Mar/2015 09:10:29] "POST /admin/ HTTP/1.1" 200 2025
+[13/Mar/2015 09:10:33] "POST /admin/ HTTP/1.1" 200 2025
+[13/Mar/2015 09:10:51] "POST /admin/ HTTP/1.1" 302 0
+[13/Mar/2015 09:10:52] "GET /admin/ HTTP/1.1" 200 9989
+[13/Mar/2015 09:10:58] "GET /admin/ctrip/hotelimagestatic/ HTTP/1.1" 200 19674
+[13/Mar/2015 09:10:58] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[13/Mar/2015 09:11:02] "GET /admin/ctrip/hotelimage/ HTTP/1.1" 200 44558
+[13/Mar/2015 09:11:02] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[13/Mar/2015 09:11:04] "GET /admin/ctrip/hotelimage/254/ HTTP/1.1" 200 5730
+[13/Mar/2015 09:11:04] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[13/Mar/2015 09:11:07] "GET /media/ctrip_images/full/%E7%8E%89%E6%A0%91/965770/%E7%8E%8B%E5%BA%9C%E5%A5%97%E6%88%BF/bd0c7b8f4e48461ba3c4614cccce4ab1.jpg HTTP/1.1" 200 41248
+[13/Mar/2015 09:11:20] "GET /admin/ctrip/hotel/ HTTP/1.1" 200 77895
+[13/Mar/2015 09:11:20] "GET /admin/jsi18n/ HTTP/1.1" 200 2372

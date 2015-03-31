@@ -1,0 +1,452 @@
+2015-02-07 21:05:08+0800 [scrapy] INFO: Scrapy 0.24.4 started (bot: hotel)
+2015-02-07 21:05:08+0800 [scrapy] INFO: Optional features available: ssl, http11, django
+2015-02-07 21:05:08+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'hotel.spiders', 'LOG_LEVEL': 'ERROR', 'SPIDER_MODULES': ['hotel.spiders'], 'BOT_NAME': 'hotel', 'COOKIES_ENABLED': False, 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36', 'LOG_FILE': 'logs/error/2015-02-07.21.log', 'DOWNLOAD_DELAY': 0.3}
+2015-02-07 21:05:08+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2015-02-07 21:05:08+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, HttpCompressionMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, RedirectMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-02-07 21:05:08+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-02-07 21:05:08+0800 [scrapy] INFO: Enabled item pipelines: HotelPipeline
+2015-02-07 21:05:08+0800 [ctrip_city] INFO: Spider opened
+2015-02-07 21:05:08+0800 [ctrip_city] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-02-07 21:05:09+0800 [scrapy] INFO: 173,阿克苏,akesu,http://hotels.ctrip.com/hotel/akesu173
+2015-02-07 21:05:09+0800 [scrapy] INFO: 175,阿勒泰,aletai,http://hotels.ctrip.com/hotel/aletai175
+2015-02-07 21:05:09+0800 [scrapy] INFO: 97,阿里,ali,http://hotels.ctrip.com/hotel/ali97
+2015-02-07 21:05:09+0800 [scrapy] INFO: 171,安康,ankang,http://hotels.ctrip.com/hotel/ankang171
+2015-02-07 21:05:09+0800 [scrapy] INFO: 177,安庆,anqing,http://hotels.ctrip.com/hotel/anqing177
+2015-02-07 21:05:09+0800 [scrapy] INFO: 178,鞍山,anshan,http://hotels.ctrip.com/hotel/anshan178
+2015-02-07 21:05:09+0800 [scrapy] INFO: 179,安顺,anshun,http://hotels.ctrip.com/hotel/anshun179
+2015-02-07 21:05:09+0800 [scrapy] INFO: 181,安阳,anyang,http://hotels.ctrip.com/hotel/anyang181
+2015-02-07 21:05:09+0800 [scrapy] INFO: 59,澳门,macau,http://hotels.ctrip.com/hotel/macau59
+2015-02-07 21:05:09+0800 [scrapy] INFO: 1116,白城,baicheng,http://hotels.ctrip.com/hotel/baicheng1116
+2015-02-07 21:05:09+0800 [scrapy] INFO: 1140,百色,baise,http://hotels.ctrip.com/hotel/baise1140
+2015-02-07 21:05:09+0800 [scrapy] INFO: 21025,白沙,baisha,http://hotels.ctrip.com/hotel/baisha21025
+2015-02-07 21:05:09+0800 [scrapy] INFO: 3886,白山,baishan,http://hotels.ctrip.com/hotel/baishan3886
+2015-02-07 21:05:10+0800 [scrapy] INFO: 1541,白银,baiyin,http://hotels.ctrip.com/hotel/baiyin1541
+2015-02-07 21:05:10+0800 [scrapy] INFO: 185,保定,baoding,http://hotels.ctrip.com/hotel/baoding185
+2015-02-07 21:05:10+0800 [scrapy] INFO: 112,宝鸡,baoji,http://hotels.ctrip.com/hotel/baoji112
+2015-02-07 21:05:10+0800 [scrapy] INFO: 197,保山,baoshan,http://hotels.ctrip.com/hotel/baoshan197
+2015-02-07 21:05:10+0800 [scrapy] INFO: 141,包头,baotou,http://hotels.ctrip.com/hotel/baotou141
+2015-02-07 21:05:10+0800 [scrapy] INFO: 3887,巴彦淖尔,bayannaoer,http://hotels.ctrip.com/hotel/bayannaoer3887
+2015-02-07 21:05:10+0800 [scrapy] INFO: 3966,巴中,bazhong,http://hotels.ctrip.com/hotel/bazhong3966
+2015-02-07 21:05:10+0800 [scrapy] INFO: 189,北海,beihai,http://hotels.ctrip.com/hotel/beihai189
+2015-02-07 21:05:10+0800 [scrapy] INFO: 1,北京,beijing,http://hotels.ctrip.com/hotel/beijing1
+2015-02-07 21:05:10+0800 [scrapy] INFO: 182,蚌埠,bengbu,http://hotels.ctrip.com/hotel/bengbu182
+2015-02-07 21:05:10+0800 [scrapy] INFO: 1155,本溪,benxi,http://hotels.ctrip.com/hotel/benxi1155
+2015-02-07 21:05:10+0800 [scrapy] INFO: 22031,毕节,bijie,http://hotels.ctrip.com/hotel/bijie22031
+2015-02-07 21:05:10+0800 [scrapy] INFO: 1820,滨州,binzhou,http://hotels.ctrip.com/hotel/binzhou1820
+2015-02-07 21:05:10+0800 [scrapy] INFO: 21468,博尔塔拉,boertala,http://hotels.ctrip.com/hotel/boertala21468
+2015-02-07 21:05:10+0800 [scrapy] INFO: 1078,亳州,bozhou,http://hotels.ctrip.com/hotel/bozhou1078
+2015-02-07 21:05:10+0800 [scrapy] INFO: 56,昌江,cangjiang,http://hotels.ctrip.com/hotel/cangjiang56
+2015-02-07 21:05:10+0800 [scrapy] INFO: 216,沧州,cangzhou,http://hotels.ctrip.com/hotel/cangzhou216
+2015-02-07 21:05:10+0800 [scrapy] INFO: 158,长春,changchun,http://hotels.ctrip.com/hotel/changchun158
+2015-02-07 21:05:10+0800 [scrapy] INFO: 201,常德,changde,http://hotels.ctrip.com/hotel/changde201
+2015-02-07 21:05:10+0800 [scrapy] INFO: 575,昌都,changdu,http://hotels.ctrip.com/hotel/changdu575
+2015-02-07 21:05:10+0800 [scrapy] INFO: 22032,昌吉,changji,http://hotels.ctrip.com/hotel/changji22032
+2015-02-07 21:05:11+0800 [scrapy] INFO: 206,长沙,changsha,http://hotels.ctrip.com/hotel/changsha206
+2015-02-07 21:05:11+0800 [scrapy] INFO: 137,长治,changzhi,http://hotels.ctrip.com/hotel/changzhi137
+2015-02-07 21:05:11+0800 [scrapy] INFO: 213,常州,changzhou,http://hotels.ctrip.com/hotel/changzhou213
+2015-02-07 21:05:11+0800 [scrapy] INFO: 215,潮州,chaozhou,http://hotels.ctrip.com/hotel/chaozhou215
+2015-02-07 21:05:11+0800 [scrapy] INFO: 562,承德,chengde,http://hotels.ctrip.com/hotel/chengde562
+2015-02-07 21:05:11+0800 [scrapy] INFO: 28,成都,chengdu,http://hotels.ctrip.com/hotel/chengdu28
+2015-02-07 21:05:11+0800 [scrapy] INFO: 20836,澄迈,chengmai,http://hotels.ctrip.com/hotel/chengmai20836
+2015-02-07 21:05:11+0800 [scrapy] INFO: 612,郴州,chenzhou,http://hotels.ctrip.com/hotel/chenzhou612
+2015-02-07 21:05:11+0800 [scrapy] INFO: 202,赤峰,chifeng,http://hotels.ctrip.com/hotel/chifeng202
+2015-02-07 21:05:11+0800 [scrapy] INFO: 218,池州,chizhou,http://hotels.ctrip.com/hotel/chizhou218
+2015-02-07 21:05:11+0800 [scrapy] INFO: 4,重庆,chongqing,http://hotels.ctrip.com/hotel/chongqing4
+2015-02-07 21:05:11+0800 [scrapy] INFO: 1896,崇左,chongzuo,http://hotels.ctrip.com/hotel/chongzuo1896
+2015-02-07 21:05:11+0800 [scrapy] INFO: 214,滁州,chuzhou,http://hotels.ctrip.com/hotel/chuzhou214
+2015-02-07 21:05:11+0800 [scrapy] INFO: 36,大理市,dali,http://hotels.ctrip.com/hotel/dali36
+2015-02-07 21:05:11+0800 [scrapy] INFO: 6,大连,dalian,http://hotels.ctrip.com/hotel/dalian6
+2015-02-07 21:05:11+0800 [scrapy] INFO: 221,丹东,dandong,http://hotels.ctrip.com/hotel/dandong221
+2015-02-07 21:05:11+0800 [scrapy] INFO: 57,儋州,danzhou,http://hotels.ctrip.com/hotel/danzhou57
+2015-02-07 21:05:11+0800 [scrapy] INFO: 231,大庆,daqing,http://hotels.ctrip.com/hotel/daqing231
+2015-02-07 21:05:11+0800 [scrapy] INFO: 136,大同,datong,http://hotels.ctrip.com/hotel/datong136
+2015-02-07 21:05:11+0800 [scrapy] INFO: 7663,大兴安岭,daxinganling,http://hotels.ctrip.com/hotel/daxinganling7663
+2015-02-07 21:05:12+0800 [scrapy] INFO: 1233,达州,dazhou,http://hotels.ctrip.com/hotel/dazhou1233
+2015-02-07 21:05:12+0800 [scrapy] INFO: 237,德阳,deyang,http://hotels.ctrip.com/hotel/deyang237
+2015-02-07 21:05:12+0800 [scrapy] INFO: 1370,德州,dezhou,http://hotels.ctrip.com/hotel/dezhou1370
+2015-02-07 21:05:12+0800 [scrapy] INFO: 50,定安,ding'an,http://hotels.ctrip.com/hotel/ding'an50
+2015-02-07 21:05:12+0800 [scrapy] INFO: 1021,定西,dingxi,http://hotels.ctrip.com/hotel/dingxi1021
+2015-02-07 21:05:12+0800 [scrapy] INFO: 48,东方,dongfang,http://hotels.ctrip.com/hotel/dongfang48
+2015-02-07 21:05:12+0800 [scrapy] INFO: 223,东莞,dongguan,http://hotels.ctrip.com/hotel/dongguan223
+2015-02-07 21:05:12+0800 [scrapy] INFO: 236,东营,dongying,http://hotels.ctrip.com/hotel/dongying236
+2015-02-07 21:05:12+0800 [scrapy] INFO: 3976,鄂尔多斯,e'erduosi,http://hotels.ctrip.com/hotel/e'erduosi3976
+2015-02-07 21:05:12+0800 [scrapy] INFO: 245,恩施,enshi,http://hotels.ctrip.com/hotel/enshi245
+2015-02-07 21:05:12+0800 [scrapy] INFO: 992,鄂州,ezhou,http://hotels.ctrip.com/hotel/ezhou992
+2015-02-07 21:05:12+0800 [scrapy] INFO: 1677,防城港,fangchenggang,http://hotels.ctrip.com/hotel/fangchenggang1677
+2015-02-07 21:05:12+0800 [scrapy] INFO: 251,佛山,foshan,http://hotels.ctrip.com/hotel/foshan251
+2015-02-07 21:05:12+0800 [scrapy] INFO: 252,抚顺,fushun,http://hotels.ctrip.com/hotel/fushun252
+2015-02-07 21:05:12+0800 [scrapy] INFO: 254,阜新,fuxin,http://hotels.ctrip.com/hotel/fuxin254
+2015-02-07 21:05:12+0800 [scrapy] INFO: 257,阜阳,fuyang,http://hotels.ctrip.com/hotel/fuyang257
+2015-02-07 21:05:12+0800 [scrapy] INFO: 258,福州,fuzhou,http://hotels.ctrip.com/hotel/fuzhou258
+2015-02-07 21:05:12+0800 [scrapy] INFO: 3884,抚州,fuzhou,http://hotels.ctrip.com/hotel/fuzhou3884
+2015-02-07 21:05:12+0800 [scrapy] INFO: 7844,甘南,gannan,http://hotels.ctrip.com/hotel/gannan7844
+2015-02-07 21:05:12+0800 [scrapy] INFO: 268,赣州,ganzhou,http://hotels.ctrip.com/hotel/ganzhou268
+2015-02-07 21:05:13+0800 [scrapy] INFO: 4124,甘孜,ganzizhou,http://hotels.ctrip.com/hotel/ganzizhou4124
+2015-02-07 21:05:13+0800 [scrapy] INFO: 1100,广安,guang'an,http://hotels.ctrip.com/hotel/guang'an1100
+2015-02-07 21:05:13+0800 [scrapy] INFO: 267,广元,guangyuan,http://hotels.ctrip.com/hotel/guangyuan267
+2015-02-07 21:05:13+0800 [scrapy] INFO: 32,广州,guangzhou,http://hotels.ctrip.com/hotel/guangzhou32
+2015-02-07 21:05:13+0800 [scrapy] INFO: 1518,贵港,guigang,http://hotels.ctrip.com/hotel/guigang1518
+2015-02-07 21:05:13+0800 [scrapy] INFO: 33,桂林,guilin,http://hotels.ctrip.com/hotel/guilin33
+2015-02-07 21:05:13+0800 [scrapy] INFO: 38,贵阳,guiyang,http://hotels.ctrip.com/hotel/guiyang38
+2015-02-07 21:05:13+0800 [scrapy] INFO: 321,固原,guyuan,http://hotels.ctrip.com/hotel/guyuan321
+2015-02-07 21:05:13+0800 [scrapy] INFO: 5,哈尔滨,haerbin,http://hotels.ctrip.com/hotel/haerbin5
+2015-02-07 21:05:13+0800 [scrapy] INFO: 7807,海北,haibei,http://hotels.ctrip.com/hotel/haibei7807
+2015-02-07 21:05:13+0800 [scrapy] INFO: 7752,海东,haidong,http://hotels.ctrip.com/hotel/haidong7752
+2015-02-07 21:05:13+0800 [scrapy] INFO: 42,海口,haikou,http://hotels.ctrip.com/hotel/haikou42
+2015-02-07 21:05:13+0800 [scrapy] INFO: 7794,海南,hainan,http://hotels.ctrip.com/hotel/hainan7794
+2015-02-07 21:05:13+0800 [scrapy] INFO: 7589,海西,haixizhou,http://hotels.ctrip.com/hotel/haixizhou7589
+2015-02-07 21:05:13+0800 [scrapy] INFO: 21395,哈密,hami,http://hotels.ctrip.com/hotel/hami21395
+2015-02-07 21:05:13+0800 [scrapy] INFO: 275,邯郸,handan,http://hotels.ctrip.com/hotel/handan275
+2015-02-07 21:05:13+0800 [scrapy] INFO: 17,杭州,hangzhou,http://hotels.ctrip.com/hotel/hangzhou17
+2015-02-07 21:05:13+0800 [scrapy] INFO: 129,汉中,hanzhong,http://hotels.ctrip.com/hotel/hanzhong129
+2015-02-07 21:05:13+0800 [scrapy] INFO: 951,鹤壁,hebi,http://hotels.ctrip.com/hotel/hebi951
+2015-02-07 21:05:13+0800 [scrapy] INFO: 3969,河池,hechi,http://hotels.ctrip.com/hotel/hechi3969
+2015-02-07 21:05:13+0800 [scrapy] INFO: 278,合肥,hefei,http://hotels.ctrip.com/hotel/hefei278
+2015-02-07 21:05:13+0800 [scrapy] INFO: 1611,鹤岗,hegang,http://hotels.ctrip.com/hotel/hegang1611
+2015-02-07 21:05:14+0800 [scrapy] INFO: 281,黑河,heihe,http://hotels.ctrip.com/hotel/heihe281
+2015-02-07 21:05:14+0800 [scrapy] INFO: 290,衡水,hengshui,http://hotels.ctrip.com/hotel/hengshui290
+2015-02-07 21:05:14+0800 [scrapy] INFO: 297,衡阳,hengyang,http://hotels.ctrip.com/hotel/hengyang297
+2015-02-07 21:05:14+0800 [scrapy] INFO: 20931,和田,hetian,http://hotels.ctrip.com/hotel/hetian20931
+2015-02-07 21:05:14+0800 [scrapy] INFO: 693,河源,heyuan,http://hotels.ctrip.com/hotel/heyuan693
+2015-02-07 21:05:14+0800 [scrapy] INFO: 1074,菏泽,heze,http://hotels.ctrip.com/hotel/heze1074
+2015-02-07 21:05:14+0800 [scrapy] INFO: 4146,贺州,hezhou,http://hotels.ctrip.com/hotel/hezhou4146
+2015-02-07 21:05:14+0800 [scrapy] INFO: 58,香港,hong-kong,http://hotels.ctrip.com/hotel/hong-kong58
+2015-02-07 21:05:14+0800 [scrapy] INFO: 577,淮安,huai'an,http://hotels.ctrip.com/hotel/huai'an577
+2015-02-07 21:05:14+0800 [scrapy] INFO: 272,淮北,huaibei,http://hotels.ctrip.com/hotel/huaibei272
+2015-02-07 21:05:14+0800 [scrapy] INFO: 282,怀化,huaihua,http://hotels.ctrip.com/hotel/huaihua282
+2015-02-07 21:05:14+0800 [scrapy] INFO: 287,淮南,huainan,http://hotels.ctrip.com/hotel/huainan287
+2015-02-07 21:05:14+0800 [scrapy] INFO: 3885,黄冈,huanggang,http://hotels.ctrip.com/hotel/huanggang3885
+2015-02-07 21:05:14+0800 [scrapy] INFO: 7802,黄南,huangnan,http://hotels.ctrip.com/hotel/huangnan7802
+2015-02-07 21:05:14+0800 [scrapy] INFO: 23,黄山,huangshan,http://hotels.ctrip.com/hotel/huangshan23
+2015-02-07 21:05:14+0800 [scrapy] INFO: 292,黄石,huangshi,http://hotels.ctrip.com/hotel/huangshi292
+2015-02-07 21:05:14+0800 [scrapy] INFO: 103,呼和浩特,huhehaote,http://hotels.ctrip.com/hotel/huhehaote103
+2015-02-07 21:05:14+0800 [scrapy] INFO: 299,惠州,huizhou,http://hotels.ctrip.com/hotel/huizhou299
+2015-02-07 21:05:14+0800 [scrapy] INFO: 1050,葫芦岛,huludao,http://hotels.ctrip.com/hotel/huludao1050
+2015-02-07 21:05:15+0800 [scrapy] INFO: 4255,呼伦贝尔,hulunbeier,http://hotels.ctrip.com/hotel/hulunbeier4255
+2015-02-07 21:05:15+0800 [scrapy] INFO: 86,湖州,huzhou,http://hotels.ctrip.com/hotel/huzhou86
+2015-02-07 21:05:15+0800 [scrapy] INFO: 317,佳木斯,jiamusi,http://hotels.ctrip.com/hotel/jiamusi317
+2015-02-07 21:05:15+0800 [scrapy] INFO: 933,吉安,jian,http://hotels.ctrip.com/hotel/jian933
+2015-02-07 21:05:15+0800 [scrapy] INFO: 316,江门,jiangmen,http://hotels.ctrip.com/hotel/jiangmen316
+2015-02-07 21:05:15+0800 [scrapy] INFO: 1093,焦作,jiaozuo,http://hotels.ctrip.com/hotel/jiaozuo1093
+2015-02-07 21:05:15+0800 [scrapy] INFO: 571,嘉兴,jiaxing,http://hotels.ctrip.com/hotel/jiaxing571
+2015-02-07 21:05:15+0800 [scrapy] INFO: 326,嘉峪关,jiayuguan,http://hotels.ctrip.com/hotel/jiayuguan326
+2015-02-07 21:05:15+0800 [scrapy] INFO: 956,揭阳,jieyang,http://hotels.ctrip.com/hotel/jieyang956
+2015-02-07 21:05:15+0800 [scrapy] INFO: 159,吉林,jilin,http://hotels.ctrip.com/hotel/jilin159
+2015-02-07 21:05:15+0800 [scrapy] INFO: 144,济南,jinan,http://hotels.ctrip.com/hotel/jinan144
+2015-02-07 21:05:15+0800 [scrapy] INFO: 1158,金昌,jinchang,http://hotels.ctrip.com/hotel/jinchang1158
+2015-02-07 21:05:15+0800 [scrapy] INFO: 1092,晋城,jincheng,http://hotels.ctrip.com/hotel/jincheng1092
+2015-02-07 21:05:15+0800 [scrapy] INFO: 305,景德镇,jingdezhen,http://hotels.ctrip.com/hotel/jingdezhen305
+2015-02-07 21:05:15+0800 [scrapy] INFO: 1121,荆门,jingmen,http://hotels.ctrip.com/hotel/jingmen1121
+2015-02-07 21:05:15+0800 [scrapy] INFO: 328,荆州,jingzhou,http://hotels.ctrip.com/hotel/jingzhou328
+2015-02-07 21:05:15+0800 [scrapy] INFO: 308,金华,jinhua,http://hotels.ctrip.com/hotel/jinhua308
+2015-02-07 21:05:15+0800 [scrapy] INFO: 318,济宁,jining,http://hotels.ctrip.com/hotel/jining318
+2015-02-07 21:05:15+0800 [scrapy] INFO: 1453,晋中,jinzhong,http://hotels.ctrip.com/hotel/jinzhong1453
+2015-02-07 21:05:16+0800 [scrapy] INFO: 327,锦州,jinzhou,http://hotels.ctrip.com/hotel/jinzhou327
+2015-02-07 21:05:16+0800 [scrapy] INFO: 24,九江,jiujiang,http://hotels.ctrip.com/hotel/jiujiang24
+2015-02-07 21:05:16+0800 [scrapy] INFO: 662,酒泉,jiuquan,http://hotels.ctrip.com/hotel/jiuquan662
+2015-02-07 21:05:16+0800 [scrapy] INFO: 157,鸡西,jixi,http://hotels.ctrip.com/hotel/jixi157
+2015-02-07 21:05:16+0800 [scrapy] INFO: 1454,济源,jiyuan,http://hotels.ctrip.com/hotel/jiyuan1454
+2015-02-07 21:05:16+0800 [scrapy] INFO: 331,开封,kaifeng,http://hotels.ctrip.com/hotel/kaifeng331
+2015-02-07 21:05:16+0800 [scrapy] INFO: 21358,喀什,kashi,http://hotels.ctrip.com/hotel/kashi21358
+2015-02-07 21:05:16+0800 [scrapy] INFO: 166,克拉玛依,kelamayi,http://hotels.ctrip.com/hotel/kelamayi166
+2015-02-07 21:05:16+0800 [scrapy] INFO: 34,昆明,kunming,http://hotels.ctrip.com/hotel/kunming34
+2015-02-07 21:05:16+0800 [scrapy] INFO: 1892,来宾,laibin,http://hotels.ctrip.com/hotel/laibin1892
+2015-02-07 21:05:16+0800 [scrapy] INFO: 1452,莱芜,laiwu,http://hotels.ctrip.com/hotel/laiwu1452
+2015-02-07 21:05:16+0800 [scrapy] INFO: 340,廊坊,langfang,http://hotels.ctrip.com/hotel/langfang340
+2015-02-07 21:05:16+0800 [scrapy] INFO: 100,兰州,lanzhou,http://hotels.ctrip.com/hotel/lanzhou100
+2015-02-07 21:05:16+0800 [scrapy] INFO: 41,拉萨,lasa,http://hotels.ctrip.com/hotel/lasa41
+2015-02-07 21:05:16+0800 [scrapy] INFO: 49,乐东,ledong,http://hotels.ctrip.com/hotel/ledong49
+2015-02-07 21:05:16+0800 [scrapy] INFO: 345,乐山,leshan,http://hotels.ctrip.com/hotel/leshan345
+2015-02-07 21:05:16+0800 [scrapy] INFO: 7537,凉山,liangshanzhou,http://hotels.ctrip.com/hotel/liangshanzhou7537
+2015-02-07 21:05:16+0800 [scrapy] INFO: 353,连云港,lianyungang,http://hotels.ctrip.com/hotel/lianyungang353
+2015-02-07 21:05:16+0800 [scrapy] INFO: 1071,聊城,liaocheng,http://hotels.ctrip.com/hotel/liaocheng1071
+2015-02-07 21:05:16+0800 [scrapy] INFO: 351,辽阳,liaoyang,http://hotels.ctrip.com/hotel/liaoyang351
+2015-02-07 21:05:16+0800 [scrapy] INFO: 352,辽源,liaoyuan,http://hotels.ctrip.com/hotel/liaoyuan352
+2015-02-07 21:05:17+0800 [scrapy] INFO: 37,丽江,lijiang,http://hotels.ctrip.com/hotel/lijiang37
+2015-02-07 21:05:17+0800 [scrapy] INFO: 1236,临沧,lincang,http://hotels.ctrip.com/hotel/lincang1236
+2015-02-07 21:05:17+0800 [scrapy] INFO: 139,临汾,linfen,http://hotels.ctrip.com/hotel/linfen139
+2015-02-07 21:05:17+0800 [scrapy] INFO: 20868,临高,lingao,http://hotels.ctrip.com/hotel/lingao20868
+2015-02-07 21:05:17+0800 [scrapy] INFO: 21892,临夏,linxia,http://hotels.ctrip.com/hotel/linxia21892
+2015-02-07 21:05:17+0800 [scrapy] INFO: 569,临沂,linyi,http://hotels.ctrip.com/hotel/linyi569
+2015-02-07 21:05:17+0800 [scrapy] INFO: 108,林芝,linzhi,http://hotels.ctrip.com/hotel/linzhi108
+2015-02-07 21:05:17+0800 [scrapy] INFO: 346,丽水,lishui,http://hotels.ctrip.com/hotel/lishui346
+2015-02-07 21:05:17+0800 [scrapy] INFO: 605,六盘水,liupanshui,http://hotels.ctrip.com/hotel/liupanshui605
+2015-02-07 21:05:17+0800 [scrapy] INFO: 354,柳州,liuzhou,http://hotels.ctrip.com/hotel/liuzhou354
+2015-02-07 21:05:17+0800 [scrapy] INFO: 7707,陇南,longnan,http://hotels.ctrip.com/hotel/longnan7707
+2015-02-07 21:05:17+0800 [scrapy] INFO: 348,龙岩,longyan,http://hotels.ctrip.com/hotel/longyan348
+2015-02-07 21:05:17+0800 [scrapy] INFO: 918,娄底,loudi,http://hotels.ctrip.com/hotel/loudi918
+2015-02-07 21:05:17+0800 [scrapy] INFO: 1705,六安,luan,http://hotels.ctrip.com/hotel/luan1705
+2015-02-07 21:05:17+0800 [scrapy] INFO: 1088,漯河,luohe,http://hotels.ctrip.com/hotel/luohe1088
+2015-02-07 21:05:17+0800 [scrapy] INFO: 350,洛阳,luoyang,http://hotels.ctrip.com/hotel/luoyang350
+2015-02-07 21:05:17+0800 [scrapy] INFO: 355,泸州,luzhou,http://hotels.ctrip.com/hotel/luzhou355
+2015-02-07 21:05:17+0800 [scrapy] INFO: 7631,吕梁,lvliang,http://hotels.ctrip.com/hotel/lvliang7631
+2015-02-07 21:05:17+0800 [scrapy] INFO: 1024,马鞍山,ma'anshan,http://hotels.ctrip.com/hotel/ma'anshan1024
+2015-02-07 21:05:17+0800 [scrapy] INFO: 59,澳门,macau,http://hotels.ctrip.com/hotel/macau59
+2015-02-07 21:05:17+0800 [scrapy] INFO: 1105,茂名,maoming,http://hotels.ctrip.com/hotel/maoming1105
+2015-02-07 21:05:18+0800 [scrapy] INFO: 1148,眉山,meishan,http://hotels.ctrip.com/hotel/meishan1148
+2015-02-07 21:05:18+0800 [scrapy] INFO: 3053,梅州,meizhou,http://hotels.ctrip.com/hotel/meizhou3053
+2015-02-07 21:05:18+0800 [scrapy] INFO: 370,绵阳,mianyang,http://hotels.ctrip.com/hotel/mianyang370
+2015-02-07 21:05:18+0800 [scrapy] INFO: 150,牡丹江,mudanjiang,http://hotels.ctrip.com/hotel/mudanjiang150
+2015-02-07 21:05:18+0800 [scrapy] INFO: 376,南昌,nanchang,http://hotels.ctrip.com/hotel/nanchang376
+2015-02-07 21:05:18+0800 [scrapy] INFO: 377,南充,nanchong,http://hotels.ctrip.com/hotel/nanchong377
+2015-02-07 21:05:18+0800 [scrapy] INFO: 12,南京,nanjing,http://hotels.ctrip.com/hotel/nanjing12
+2015-02-07 21:05:18+0800 [scrapy] INFO: 380,南宁,nanning,http://hotels.ctrip.com/hotel/nanning380
+2015-02-07 21:05:18+0800 [scrapy] INFO: 606,南平,nanping,http://hotels.ctrip.com/hotel/nanping606
+2015-02-07 21:05:18+0800 [scrapy] INFO: 82,南通,nantong,http://hotels.ctrip.com/hotel/nantong82
+2015-02-07 21:05:18+0800 [scrapy] INFO: 385,南阳,nanyang,http://hotels.ctrip.com/hotel/nanyang385
+2015-02-07 21:05:18+0800 [scrapy] INFO: 3839,那曲,naqu,http://hotels.ctrip.com/hotel/naqu3839
+2015-02-07 21:05:18+0800 [scrapy] INFO: 1597,内江,neijiang,http://hotels.ctrip.com/hotel/neijiang1597
+2015-02-07 21:05:18+0800 [scrapy] INFO: 375,宁波,ningbo,http://hotels.ctrip.com/hotel/ningbo375
+2015-02-07 21:05:18+0800 [scrapy] INFO: 378,宁德,ningde,http://hotels.ctrip.com/hotel/ningde378
+2015-02-07 21:05:18+0800 [scrapy] INFO: 1806,怒江,nujiang,http://hotels.ctrip.com/hotel/nujiang1806
+2015-02-07 21:05:18+0800 [scrapy] INFO: 387,盘锦,panjin,http://hotels.ctrip.com/hotel/panjin387
+2015-02-07 21:05:18+0800 [scrapy] INFO: 1097,攀枝花,panzhihua,http://hotels.ctrip.com/hotel/panzhihua1097
+2015-02-07 21:05:18+0800 [scrapy] INFO: 7805,澎湖,penghu,http://hotels.ctrip.com/hotel/penghu7805
+2015-02-07 21:05:18+0800 [scrapy] INFO: 3222,平顶山,pingdingshan,http://hotels.ctrip.com/hotel/pingdingshan3222
+2015-02-07 21:05:18+0800 [scrapy] INFO: 388,平凉,pingliang,http://hotels.ctrip.com/hotel/pingliang388
+2015-02-07 21:05:19+0800 [scrapy] INFO: 5589,屏东,pingtung,http://hotels.ctrip.com/hotel/pingtung5589
+2015-02-07 21:05:19+0800 [scrapy] INFO: 1840,萍乡,pingxiang,http://hotels.ctrip.com/hotel/pingxiang1840
+2015-02-07 21:05:19+0800 [scrapy] INFO: 3996,普洱,puer,http://hotels.ctrip.com/hotel/puer3996
+2015-02-07 21:05:19+0800 [scrapy] INFO: 667,莆田,putian,http://hotels.ctrip.com/hotel/putian667
+2015-02-07 21:05:19+0800 [scrapy] INFO: 1232,濮阳,puyang,http://hotels.ctrip.com/hotel/puyang1232
+2015-02-07 21:05:19+0800 [scrapy] INFO: 21179,黔南,qiannan,http://hotels.ctrip.com/hotel/qiannan21179
+2015-02-07 21:05:19+0800 [scrapy] INFO: 7,青岛,qingdao,http://hotels.ctrip.com/hotel/qingdao7
+2015-02-07 21:05:19+0800 [scrapy] INFO: 404,庆阳,qingyang,http://hotels.ctrip.com/hotel/qingyang404
+2015-02-07 21:05:19+0800 [scrapy] INFO: 1422,清远,qingyuan,http://hotels.ctrip.com/hotel/qingyuan1422
+2015-02-07 21:05:19+0800 [scrapy] INFO: 147,秦皇岛,qinhuangdao,http://hotels.ctrip.com/hotel/qinhuangdao147
+2015-02-07 21:05:19+0800 [scrapy] INFO: 1899,钦州,qinzhou,http://hotels.ctrip.com/hotel/qinzhou1899
+2015-02-07 21:05:19+0800 [scrapy] INFO: 52,琼海,qionghai,http://hotels.ctrip.com/hotel/qionghai52
+2015-02-07 21:05:19+0800 [scrapy] INFO: 53,琼中,qiongzhong,http://hotels.ctrip.com/hotel/qiongzhong53
+2015-02-07 21:05:19+0800 [scrapy] INFO: 149,齐齐哈尔,qiqihaer,http://hotels.ctrip.com/hotel/qiqihaer149
+2015-02-07 21:05:19+0800 [scrapy] INFO: 1599,七台河,qitaihe,http://hotels.ctrip.com/hotel/qitaihe1599
+2015-02-07 21:05:19+0800 [scrapy] INFO: 406,泉州,quanzhou,http://hotels.ctrip.com/hotel/quanzhou406
+2015-02-07 21:05:19+0800 [scrapy] INFO: 985,曲靖,qujing,http://hotels.ctrip.com/hotel/qujing985
+2015-02-07 21:05:19+0800 [scrapy] INFO: 407,衢州,quzhou,http://hotels.ctrip.com/hotel/quzhou407
+2015-02-07 21:05:19+0800 [scrapy] INFO: 92,日喀则,rikaze,http://hotels.ctrip.com/hotel/rikaze92
+2015-02-07 21:05:19+0800 [scrapy] INFO: 1106,日照,rizhao,http://hotels.ctrip.com/hotel/rizhao1106
+2015-02-07 21:05:20+0800 [scrapy] INFO: 436,三门峡,sanmenxia,http://hotels.ctrip.com/hotel/sanmenxia436
+2015-02-07 21:05:20+0800 [scrapy] INFO: 437,三明,sanming,http://hotels.ctrip.com/hotel/sanming437
+2015-02-07 21:05:20+0800 [scrapy] INFO: 43,三亚,sanya,http://hotels.ctrip.com/hotel/sanya43
+2015-02-07 21:05:20+0800 [scrapy] INFO: 2,上海,shanghai,http://hotels.ctrip.com/hotel/shanghai2
+2015-02-07 21:05:20+0800 [scrapy] INFO: 7551,商洛,shangluo,http://hotels.ctrip.com/hotel/shangluo7551
+2015-02-07 21:05:20+0800 [scrapy] INFO: 441,商丘,shangqiu,http://hotels.ctrip.com/hotel/shangqiu441
+2015-02-07 21:05:20+0800 [scrapy] INFO: 411,上饶,shangrao,http://hotels.ctrip.com/hotel/shangrao411
+2015-02-07 21:05:20+0800 [scrapy] INFO: 439,山南,shannan,http://hotels.ctrip.com/hotel/shannan439
+2015-02-07 21:05:20+0800 [scrapy] INFO: 447,汕头,shantou,http://hotels.ctrip.com/hotel/shantou447
+2015-02-07 21:05:20+0800 [scrapy] INFO: 1436,汕尾,shanwei,http://hotels.ctrip.com/hotel/shanwei1436
+2015-02-07 21:05:20+0800 [scrapy] INFO: 422,韶关,shaoguan,http://hotels.ctrip.com/hotel/shaoguan422
+2015-02-07 21:05:20+0800 [scrapy] INFO: 22,绍兴,shaoxing,http://hotels.ctrip.com/hotel/shaoxing22
+2015-02-07 21:05:20+0800 [scrapy] INFO: 1111,邵阳,shaoyang,http://hotels.ctrip.com/hotel/shaoyang1111
+2015-02-07 21:05:20+0800 [scrapy] INFO: 451,沈阳,shenyang,http://hotels.ctrip.com/hotel/shenyang451
+2015-02-07 21:05:20+0800 [scrapy] INFO: 30,深圳,shenzhen,http://hotels.ctrip.com/hotel/shenzhen30
+2015-02-07 21:05:20+0800 [scrapy] INFO: 428,石家庄,shijiazhuang,http://hotels.ctrip.com/hotel/shijiazhuang428
+2015-02-07 21:05:20+0800 [scrapy] INFO: 452,十堰,shiyan,http://hotels.ctrip.com/hotel/shiyan452
+2015-02-07 21:05:20+0800 [scrapy] INFO: 4216,石嘴山,shizuishan,http://hotels.ctrip.com/hotel/shizuishan4216
+2015-02-07 21:05:20+0800 [scrapy] INFO: 1617,双鸭山,shuangyashan,http://hotels.ctrip.com/hotel/shuangyashan1617
+2015-02-07 21:05:20+0800 [scrapy] INFO: 1317,朔州,shuozhou,http://hotels.ctrip.com/hotel/shuozhou1317
+2015-02-07 21:05:21+0800 [scrapy] INFO: 440,四平,siping,http://hotels.ctrip.com/hotel/siping440
+2015-02-07 21:05:21+0800 [scrapy] INFO: 1303,松原,songyuan,http://hotels.ctrip.com/hotel/songyuan1303
+2015-02-07 21:05:21+0800 [scrapy] INFO: 1128,绥化,suihua,http://hotels.ctrip.com/hotel/suihua1128
+2015-02-07 21:05:21+0800 [scrapy] INFO: 1371,遂宁,suining,http://hotels.ctrip.com/hotel/suining1371
+2015-02-07 21:05:21+0800 [scrapy] INFO: 1117,随州,suizhou,http://hotels.ctrip.com/hotel/suizhou1117
+2015-02-07 21:05:21+0800 [scrapy] INFO: 1472,宿迁,suqian,http://hotels.ctrip.com/hotel/suqian1472
+2015-02-07 21:05:21+0800 [scrapy] INFO: 14,苏州,suzhou,http://hotels.ctrip.com/hotel/suzhou14
+2015-02-07 21:05:21+0800 [scrapy] INFO: 521,宿州,suzhou,http://hotels.ctrip.com/hotel/suzhou521
+2015-02-07 21:05:21+0800 [scrapy] INFO: 455,塔城,tacheng,http://hotels.ctrip.com/hotel/tacheng455
+2015-02-07 21:05:21+0800 [scrapy] INFO: 454,泰安,taian,http://hotels.ctrip.com/hotel/taian454
+2015-02-07 21:05:21+0800 [scrapy] INFO: 617,台北,taipei,http://hotels.ctrip.com/hotel/taipei617
+2015-02-07 21:05:21+0800 [scrapy] INFO: 105,太原,taiyuan,http://hotels.ctrip.com/hotel/taiyuan105
+2015-02-07 21:05:21+0800 [scrapy] INFO: 579,泰州,taizhou,http://hotels.ctrip.com/hotel/taizhou579
+2015-02-07 21:05:21+0800 [scrapy] INFO: 578,台州,taizhou,http://hotels.ctrip.com/hotel/taizhou578
+2015-02-07 21:05:21+0800 [scrapy] INFO: 468,唐山,tangshan,http://hotels.ctrip.com/hotel/tangshan468
+2015-02-07 21:05:21+0800 [scrapy] INFO: 3,天津,tianjin,http://hotels.ctrip.com/hotel/tianjin3
+2015-02-07 21:05:21+0800 [scrapy] INFO: 464,天水,tianshui,http://hotels.ctrip.com/hotel/tianshui464
+2015-02-07 21:05:21+0800 [scrapy] INFO: 1048,铁岭,tieling,http://hotels.ctrip.com/hotel/tieling1048
+2015-02-07 21:05:21+0800 [scrapy] INFO: 118,铜川,tongchuan,http://hotels.ctrip.com/hotel/tongchuan118
+2015-02-07 21:05:22+0800 [scrapy] INFO: 456,通化,tonghua,http://hotels.ctrip.com/hotel/tonghua456
+2015-02-07 21:05:22+0800 [scrapy] INFO: 458,通辽,tongliao,http://hotels.ctrip.com/hotel/tongliao458
+2015-02-07 21:05:22+0800 [scrapy] INFO: 459,铜陵,tongling,http://hotels.ctrip.com/hotel/tongling459
+2015-02-07 21:05:22+0800 [scrapy] INFO: 22033,铜仁,tongren,http://hotels.ctrip.com/hotel/tongren22033
+2015-02-07 21:05:22+0800 [scrapy] INFO: 21811,吐鲁番,tulufan,http://hotels.ctrip.com/hotel/tulufan21811
+2015-02-07 21:05:22+0800 [scrapy] INFO: 47,屯昌,tunchang,http://hotels.ctrip.com/hotel/tunchang47
+2015-02-07 21:05:22+0800 [scrapy] INFO: 45,万宁,wanning,http://hotels.ctrip.com/hotel/wanning45
+2015-02-07 21:05:22+0800 [scrapy] INFO: 475,潍坊,weifang,http://hotels.ctrip.com/hotel/weifang475
+2015-02-07 21:05:22+0800 [scrapy] INFO: 479,威海,weihai,http://hotels.ctrip.com/hotel/weihai479
+2015-02-07 21:05:22+0800 [scrapy] INFO: 1030,渭南,weinan,http://hotels.ctrip.com/hotel/weinan1030
+2015-02-07 21:05:22+0800 [scrapy] INFO: 44,文昌,wenchang,http://hotels.ctrip.com/hotel/wenchang44
+2015-02-07 21:05:22+0800 [scrapy] INFO: 20963,文山,wenshan,http://hotels.ctrip.com/hotel/wenshan20963
+2015-02-07 21:05:22+0800 [scrapy] INFO: 491,温州,wenzhou,http://hotels.ctrip.com/hotel/wenzhou491
+2015-02-07 21:05:22+0800 [scrapy] INFO: 1133,乌海,wuhai,http://hotels.ctrip.com/hotel/wuhai1133
+2015-02-07 21:05:22+0800 [scrapy] INFO: 477,武汉,wuhan,http://hotels.ctrip.com/hotel/wuhan477
+2015-02-07 21:05:22+0800 [scrapy] INFO: 478,芜湖,wuhu,http://hotels.ctrip.com/hotel/wuhu478
+2015-02-07 21:05:22+0800 [scrapy] INFO: 7518,乌兰察布,wulanchabu,http://hotels.ctrip.com/hotel/wulanchabu7518
+2015-02-07 21:05:22+0800 [scrapy] INFO: 39,乌鲁木齐,wulumuqi,http://hotels.ctrip.com/hotel/wulumuqi39
+2015-02-07 21:05:22+0800 [scrapy] INFO: 664,武威,wuwei,http://hotels.ctrip.com/hotel/wuwei664
+2015-02-07 21:05:22+0800 [scrapy] INFO: 13,无锡,wuxi,http://hotels.ctrip.com/hotel/wuxi13
+2015-02-07 21:05:22+0800 [scrapy] INFO: 46,五指山,wuzhishan,http://hotels.ctrip.com/hotel/wuzhishan46
+2015-02-07 21:05:23+0800 [scrapy] INFO: 7587,吴忠,wuzhong,http://hotels.ctrip.com/hotel/wuzhong7587
+2015-02-07 21:05:23+0800 [scrapy] INFO: 492,梧州,wuzhou,http://hotels.ctrip.com/hotel/wuzhou492
+2015-02-07 21:05:23+0800 [scrapy] INFO: 25,厦门,xiamen,http://hotels.ctrip.com/hotel/xiamen25
+2015-02-07 21:05:23+0800 [scrapy] INFO: 10,西安,xian,http://hotels.ctrip.com/hotel/xian10
+2015-02-07 21:05:23+0800 [scrapy] INFO: 58,香港,hong kong,http://hotels.ctrip.com/hotel/hong kong58
+2015-02-07 21:05:23+0800 [scrapy] INFO: 598,湘潭,xiangtan,http://hotels.ctrip.com/hotel/xiangtan598
+2015-02-07 21:05:23+0800 [scrapy] INFO: 3910,湘西,xiangxi,http://hotels.ctrip.com/hotel/xiangxi3910
+2015-02-07 21:05:23+0800 [scrapy] INFO: 496,襄阳,xiangyang,http://hotels.ctrip.com/hotel/xiangyang496
+2015-02-07 21:05:23+0800 [scrapy] INFO: 937,咸宁,xianning,http://hotels.ctrip.com/hotel/xianning937
+2015-02-07 21:05:23+0800 [scrapy] INFO: 111,咸阳,xianyang,http://hotels.ctrip.com/hotel/xianyang111
+2015-02-07 21:05:23+0800 [scrapy] INFO: 1490,孝感,xiaogan,http://hotels.ctrip.com/hotel/xiaogan1490
+2015-02-07 21:05:23+0800 [scrapy] INFO: 947,邢台,xingtai,http://hotels.ctrip.com/hotel/xingtai947
+2015-02-07 21:05:23+0800 [scrapy] INFO: 124,西宁,xining,http://hotels.ctrip.com/hotel/xining124
+2015-02-07 21:05:23+0800 [scrapy] INFO: 507,新乡,xinxiang,http://hotels.ctrip.com/hotel/xinxiang507
+2015-02-07 21:05:23+0800 [scrapy] INFO: 510,信阳,xinyang,http://hotels.ctrip.com/hotel/xinyang510
+2015-02-07 21:05:23+0800 [scrapy] INFO: 603,新余,xinyu,http://hotels.ctrip.com/hotel/xinyu603
+2015-02-07 21:05:23+0800 [scrapy] INFO: 513,忻州,xinzhou,http://hotels.ctrip.com/hotel/xinzhou513
+2015-02-07 21:05:24+0800 [scrapy] INFO: 35,西双版纳,xishuangbanna,http://hotels.ctrip.com/hotel/xishuangbanna35
+2015-02-07 21:05:24+0800 [scrapy] INFO: 1006,宣城,xuancheng,http://hotels.ctrip.com/hotel/xuancheng1006
+2015-02-07 21:05:24+0800 [scrapy] INFO: 1094,许昌,xuchang,http://hotels.ctrip.com/hotel/xuchang1094
+2015-02-07 21:05:24+0800 [scrapy] INFO: 512,徐州,xuzhou,http://hotels.ctrip.com/hotel/xuzhou512
+2015-02-07 21:05:24+0800 [scrapy] INFO: 3277,雅安,yaan,http://hotels.ctrip.com/hotel/yaan3277
+2015-02-07 21:05:24+0800 [scrapy] INFO: 110,延安,yan'an,http://hotels.ctrip.com/hotel/yan'an110
+2015-02-07 21:05:24+0800 [scrapy] INFO: 1200,盐城,yancheng,http://hotels.ctrip.com/hotel/yancheng1200
+2015-02-07 21:05:24+0800 [scrapy] INFO: 692,阳江,yangjiang,http://hotels.ctrip.com/hotel/yangjiang692
+2015-02-07 21:05:24+0800 [scrapy] INFO: 907,阳泉,yangquan,http://hotels.ctrip.com/hotel/yangquan907
+2015-02-07 21:05:24+0800 [scrapy] INFO: 15,扬州,yangzhou,http://hotels.ctrip.com/hotel/yangzhou15
+2015-02-07 21:05:24+0800 [scrapy] INFO: 533,烟台,yantai,http://hotels.ctrip.com/hotel/yantai533
+2015-02-07 21:05:24+0800 [scrapy] INFO: 514,宜宾,yibin,http://hotels.ctrip.com/hotel/yibin514
+2015-02-07 21:05:24+0800 [scrapy] INFO: 515,宜昌,yichang,http://hotels.ctrip.com/hotel/yichang515
+2015-02-07 21:05:24+0800 [scrapy] INFO: 517,伊春,yichun,http://hotels.ctrip.com/hotel/yichun517
+2015-02-07 21:05:24+0800 [scrapy] INFO: 518,宜春,yichun,http://hotels.ctrip.com/hotel/yichun518
+2015-02-07 21:05:24+0800 [scrapy] INFO: 98,伊犁,yili,http://hotels.ctrip.com/hotel/yili98
+2015-02-07 21:05:24+0800 [scrapy] INFO: 99,银川,yinchuan,http://hotels.ctrip.com/hotel/yinchuan99
+2015-02-07 21:05:24+0800 [scrapy] INFO: 1300,营口,yingkou,http://hotels.ctrip.com/hotel/yingkou1300
+2015-02-07 21:05:24+0800 [scrapy] INFO: 534,鹰潭,yingtan,http://hotels.ctrip.com/hotel/yingtan534
+2015-02-07 21:05:24+0800 [scrapy] INFO: 1125,益阳,yiyang,http://hotels.ctrip.com/hotel/yiyang1125
+2015-02-07 21:05:24+0800 [scrapy] INFO: 970,永州,yongzhou,http://hotels.ctrip.com/hotel/yongzhou970
+2015-02-07 21:05:25+0800 [scrapy] INFO: 539,岳阳,yueyang,http://hotels.ctrip.com/hotel/yueyang539
+2015-02-07 21:05:25+0800 [scrapy] INFO: 527,榆林,yulin,http://hotels.ctrip.com/hotel/yulin527
+2015-02-07 21:05:25+0800 [scrapy] INFO: 1113,玉林,yulin,http://hotels.ctrip.com/hotel/yulin1113
+2015-02-07 21:05:25+0800 [scrapy] INFO: 140,运城,yuncheng,http://hotels.ctrip.com/hotel/yuncheng140
+2015-02-07 21:05:25+0800 [scrapy] INFO: 3933,云浮,yunfu,http://hotels.ctrip.com/hotel/yunfu3933
+2015-02-07 21:05:25+0800 [scrapy] INFO: 7523,云林,yunlin,http://hotels.ctrip.com/hotel/yunlin7523
+2015-02-07 21:05:25+0800 [scrapy] INFO: 21114,玉树,yushu,http://hotels.ctrip.com/hotel/yushu21114
+2015-02-07 21:05:25+0800 [scrapy] INFO: 186,玉溪,yuxi,http://hotels.ctrip.com/hotel/yuxi186
+2015-02-07 21:05:25+0800 [scrapy] INFO: 614,枣庄,zaozhuang,http://hotels.ctrip.com/hotel/zaozhuang614
+2015-02-07 21:05:25+0800 [scrapy] INFO: 27,张家界,zhangjiajie,http://hotels.ctrip.com/hotel/zhangjiajie27
+2015-02-07 21:05:25+0800 [scrapy] INFO: 550,张家口,zhangjiakou,http://hotels.ctrip.com/hotel/zhangjiakou550
+2015-02-07 21:05:25+0800 [scrapy] INFO: 663,张掖,zhangye,http://hotels.ctrip.com/hotel/zhangye663
+2015-02-07 21:05:25+0800 [scrapy] INFO: 560,漳州,zhangzhou,http://hotels.ctrip.com/hotel/zhangzhou560
+2015-02-07 21:05:25+0800 [scrapy] INFO: 547,湛江,zhanjiang,http://hotels.ctrip.com/hotel/zhanjiang547
+2015-02-07 21:05:25+0800 [scrapy] INFO: 552,肇庆,zhaoqing,http://hotels.ctrip.com/hotel/zhaoqing552
+2015-02-07 21:05:25+0800 [scrapy] INFO: 555,昭通,zhaotong,http://hotels.ctrip.com/hotel/zhaotong555
+2015-02-07 21:05:25+0800 [scrapy] INFO: 211,朝阳,zhaoyang,http://hotels.ctrip.com/hotel/zhaoyang211
+2015-02-07 21:05:25+0800 [scrapy] INFO: 559,郑州,zhengzhou,http://hotels.ctrip.com/hotel/zhengzhou559
+2015-02-07 21:05:25+0800 [scrapy] INFO: 16,镇江,zhenjiang,http://hotels.ctrip.com/hotel/zhenjiang16
+2015-02-07 21:05:26+0800 [scrapy] INFO: 553,中山,zhongshan,http://hotels.ctrip.com/hotel/zhongshan553
+2015-02-07 21:05:26+0800 [scrapy] INFO: 556,中卫,zhongwei,http://hotels.ctrip.com/hotel/zhongwei556
+2015-02-07 21:05:26+0800 [scrapy] INFO: 3221,周口,zhoukou,http://hotels.ctrip.com/hotel/zhoukou3221
+2015-02-07 21:05:26+0800 [scrapy] INFO: 19,舟山,zhoushan,http://hotels.ctrip.com/hotel/zhoushan19
+2015-02-07 21:05:26+0800 [scrapy] INFO: 31,珠海,zhuhai,http://hotels.ctrip.com/hotel/zhuhai31
+2015-02-07 21:05:26+0800 [scrapy] INFO: 551,驻马店,zhumadian,http://hotels.ctrip.com/hotel/zhumadian551
+2015-02-07 21:05:26+0800 [scrapy] INFO: 601,株洲,zhuzhou,http://hotels.ctrip.com/hotel/zhuzhou601
+2015-02-07 21:05:26+0800 [scrapy] INFO: 542,淄博,zibo,http://hotels.ctrip.com/hotel/zibo542
+2015-02-07 21:05:26+0800 [scrapy] INFO: 544,自贡,zigong,http://hotels.ctrip.com/hotel/zigong544
+2015-02-07 21:05:26+0800 [scrapy] INFO: 1560,资阳,ziyang,http://hotels.ctrip.com/hotel/ziyang1560
+2015-02-07 21:05:26+0800 [scrapy] INFO: 558,遵义,zunyi,http://hotels.ctrip.com/hotel/zunyi558
+2015-02-07 21:05:26+0800 [ctrip_city] INFO: Closing spider (finished)
+2015-02-07 21:05:26+0800 [ctrip_city] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 397,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 23854,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2015, 2, 7, 13, 5, 26, 610482),
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 1,
+	 'scheduler/dequeued/memory': 1,
+	 'scheduler/enqueued': 1,
+	 'scheduler/enqueued/memory': 1,
+	 'start_time': datetime.datetime(2015, 2, 7, 13, 5, 8, 490903)}
+2015-02-07 21:05:26+0800 [ctrip_city] INFO: Spider closed (finished)
+2015-02-07 21:05:27+0800 [scrapy] INFO: Scrapy 0.24.4 started (bot: hotel)
+2015-02-07 21:05:27+0800 [scrapy] INFO: Optional features available: ssl, http11, django
+2015-02-07 21:05:27+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'hotel.spiders', 'LOG_LEVEL': 'ERROR', 'SPIDER_MODULES': ['hotel.spiders'], 'BOT_NAME': 'hotel', 'COOKIES_ENABLED': False, 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36', 'LOG_FILE': 'logs/error/2015-02-07.21.log', 'DOWNLOAD_DELAY': 0.3}
+2015-02-07 21:05:27+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2015-02-07 21:05:27+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, HttpCompressionMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, RedirectMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-02-07 21:05:27+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-02-07 21:05:27+0800 [scrapy] INFO: Enabled item pipelines: HotelPipeline
+2015-02-07 21:05:27+0800 [ctrip_hotel] INFO: Spider opened
+2015-02-07 21:05:27+0800 [ctrip_hotel] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-02-07 21:05:30+0800 [scrapy] INFO: 1101804,玉树祥瑞宾馆,玉树,http://hotels.ctrip.com/hotel/1101804.html
+2015-02-07 21:05:31+0800 [scrapy] INFO: 1220478,杂多县澜沧江商务宾馆,玉树,http://hotels.ctrip.com/hotel/1220478.html
+2015-02-07 21:05:32+0800 [scrapy] INFO: 965770,玉树格萨尔王府饭店,玉树,http://hotels.ctrip.com/hotel/965770.html
+2015-02-07 21:05:33+0800 [scrapy] INFO: 1101736,玉树卡囊寺宾馆,玉树,http://hotels.ctrip.com/hotel/1101736.html
+2015-02-07 21:05:34+0800 [scrapy] INFO: 1056382,玉树玉府商务宾馆,玉树,http://hotels.ctrip.com/hotel/1056382.html
+2015-02-07 21:05:34+0800 [scrapy] INFO: 1101746,玉树青藏商务宾馆,玉树,http://hotels.ctrip.com/hotel/1101746.html
+2015-02-07 21:05:34+0800 [scrapy] INFO: 1095616,玉树启明星宾馆,玉树,http://hotels.ctrip.com/hotel/1095616.html
+2015-02-07 21:05:34+0800 [scrapy] INFO: 1101758,玉树玛旁雍措宾馆,玉树,http://hotels.ctrip.com/hotel/1101758.html
+2015-02-07 21:05:34+0800 [scrapy] INFO: 1109674,玉树长江宾馆,玉树,http://hotels.ctrip.com/hotel/1109674.html
+2015-02-07 21:05:35+0800 [scrapy] INFO: 1095677,玉树康巴驿站,玉树,http://hotels.ctrip.com/hotel/1095677.html
+2015-02-07 21:05:35+0800 [scrapy] INFO: 1102129,玉树太阳部落宾馆,玉树,http://hotels.ctrip.com/hotel/1102129.html
+2015-02-07 21:05:35+0800 [scrapy] INFO: 1101773,玉树海东商务宾馆,玉树,http://hotels.ctrip.com/hotel/1101773.html
+2015-02-07 21:05:35+0800 [scrapy] INFO: 1110299,玉树雅西亚结代吉楞招待所,玉树,http://hotels.ctrip.com/hotel/1110299.html
+2015-02-07 21:05:36+0800 [scrapy] INFO: 1095039,玉树华延宾馆,玉树,http://hotels.ctrip.com/hotel/1095039.html
+2015-02-07 21:05:37+0800 [scrapy] INFO: 1095668,玉树结古松朵,玉树,http://hotels.ctrip.com/hotel/1095668.html
+2015-02-07 21:05:37+0800 [scrapy] INFO: 1095628,玉树甘孜宾馆（曲格西巷店）,玉树,http://hotels.ctrip.com/hotel/1095628.html
+2015-02-07 21:05:37+0800 [scrapy] INFO: 1108017,玉树拉布寺宾馆,玉树,http://hotels.ctrip.com/hotel/1108017.html
+2015-02-07 21:05:37+0800 [scrapy] INFO: 1095238,玉树康巴映象酒店,玉树,http://hotels.ctrip.com/hotel/1095238.html
+2015-02-07 21:05:38+0800 [scrapy] INFO: 1095260,玉树利众宾馆,玉树,http://hotels.ctrip.com/hotel/1095260.html
+2015-02-07 21:05:38+0800 [scrapy] INFO: 1101747,玉树天神宾馆,玉树,http://hotels.ctrip.com/hotel/1101747.html
+2015-02-07 21:05:39+0800 [scrapy] INFO: 1101829,玉树结古寺商务宾馆,玉树,http://hotels.ctrip.com/hotel/1101829.html
+2015-02-07 21:05:39+0800 [scrapy] INFO: 1106356,玉树青藏大酒店,玉树,http://hotels.ctrip.com/hotel/1106356.html
+2015-02-07 21:05:39+0800 [scrapy] INFO: 1101978,玉树琼龙商务宾馆,玉树,http://hotels.ctrip.com/hotel/1101978.html
+2015-02-07 21:05:39+0800 [scrapy] INFO: 1110393,玉树玉州商务宾馆,玉树,http://hotels.ctrip.com/hotel/1110393.html
+2015-02-07 21:05:40+0800 [scrapy] INFO: 1106364,玉树益典商务宾馆,玉树,http://hotels.ctrip.com/hotel/1106364.html
+2015-02-07 21:05:41+0800 [scrapy] INFO: 1102022,玉树金龙宾馆,玉树,http://hotels.ctrip.com/hotel/1102022.html
+2015-02-07 21:05:42+0800 [scrapy] INFO: 1101881,玉树盘龙宾馆,玉树,http://hotels.ctrip.com/hotel/1101881.html
+2015-02-07 21:05:42+0800 [scrapy] INFO: 1110371,玉树美玉宾馆,玉树,http://hotels.ctrip.com/hotel/1110371.html
+2015-02-07 21:05:42+0800 [scrapy] INFO: 1101966,玉树结古多大酒店,玉树,http://hotels.ctrip.com/hotel/1101966.html
+2015-02-07 21:05:43+0800 [scrapy] INFO: 1101918,玉树玉泰商务宾馆,玉树,http://hotels.ctrip.com/hotel/1101918.html
+2015-02-07 21:05:43+0800 [scrapy] INFO: 1095268,玉树凯旋大酒店,玉树,http://hotels.ctrip.com/hotel/1095268.html
+2015-02-07 21:05:43+0800 [scrapy] INFO: 1101764,玉树鲁西宾馆,玉树,http://hotels.ctrip.com/hotel/1101764.html
+2015-02-07 21:05:44+0800 [scrapy] INFO: 1094356,玉树康德宾馆,玉树,http://hotels.ctrip.com/hotel/1094356.html
+2015-02-07 21:05:44+0800 [scrapy] INFO: 1101727,玉树玉龙宾馆,玉树,http://hotels.ctrip.com/hotel/1101727.html
+2015-02-07 21:05:44+0800 [scrapy] INFO: 1094369,玉树西藏佳杰寺大酒店,玉树,http://hotels.ctrip.com/hotel/1094369.html
+2015-02-07 21:05:45+0800 [scrapy] INFO: 1108097,玉树康囊寺福家宾馆,玉树,http://hotels.ctrip.com/hotel/1108097.html
+2015-02-07 21:05:46+0800 [scrapy] INFO: 1101783,玉树西宁宾馆,玉树,http://hotels.ctrip.com/hotel/1101783.html
+2015-02-07 21:05:46+0800 [scrapy] INFO: 1094348,玉树甘孜宾馆,玉树,http://hotels.ctrip.com/hotel/1094348.html
+2015-02-07 21:05:46+0800 [scrapy] INFO: 1114940,玉树亚周招待所,玉树,http://hotels.ctrip.com/hotel/1114940.html
+2015-02-07 21:05:48+0800 [scrapy] INFO: 1113277,玉树供销宾馆,玉树,http://hotels.ctrip.com/hotel/1113277.html
+2015-02-07 21:05:51+0800 [scrapy] INFO: 1070554,玉树美如家假日宾馆,玉树,http://hotels.ctrip.com/hotel/1070554.html
+2015-02-07 21:05:51+0800 [scrapy] INFO: 1101956,玉树阳光宾馆,玉树,http://hotels.ctrip.com/hotel/1101956.html
+2015-02-07 21:05:51+0800 [scrapy] INFO: 1106267,玉树穆斯林招待所,玉树,http://hotels.ctrip.com/hotel/1106267.html
+2015-02-07 21:05:51+0800 [scrapy] INFO: 1101958,玉树兄弟宾馆,玉树,http://hotels.ctrip.com/hotel/1101958.html
+2015-02-07 21:05:51+0800 [scrapy] INFO: 1101714,玉树索南严培宾馆,玉树,http://hotels.ctrip.com/hotel/1101714.html
+2015-02-07 21:05:51+0800 [scrapy] INFO: 1101827,玉树雪山宾馆,玉树,http://hotels.ctrip.com/hotel/1101827.html
+2015-02-07 21:05:51+0800 [scrapy] INFO: 1093259,玉树金泰商务宾馆,玉树,http://hotels.ctrip.com/hotel/1093259.html
+2015-02-07 21:05:52+0800 [scrapy] INFO: 1095217,玉树旦周宾馆,玉树,http://hotels.ctrip.com/hotel/1095217.html
+2015-02-07 21:05:52+0800 [scrapy] INFO: 1101820,玉树康巴旅社,玉树,http://hotels.ctrip.com/hotel/1101820.html
+2015-02-07 21:05:52+0800 [scrapy] INFO: 1106755,玉树路人客栈,玉树,http://hotels.ctrip.com/hotel/1106755.html
+2015-02-07 21:05:52+0800 [ctrip_hotel] INFO: Closing spider (finished)
+2015-02-07 21:05:52+0800 [ctrip_hotel] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 28053,
+	 'downloader/request_count': 61,
+	 'downloader/request_method_count/GET': 61,
+	 'downloader/response_bytes': 2199827,
+	 'downloader/response_count': 61,
+	 'downloader/response_status_count/200': 55,
+	 'downloader/response_status_count/301': 3,
+	 'downloader/response_status_count/307': 3,
+	 'dupefilter/filtered': 3,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2015, 2, 7, 13, 5, 52, 738565),
+	 'item_scraped_count': 50,
+	 'request_depth_max': 3,
+	 'response_received_count': 55,
+	 'scheduler/dequeued': 61,
+	 'scheduler/dequeued/memory': 61,
+	 'scheduler/enqueued': 61,
+	 'scheduler/enqueued/memory': 61,
+	 'start_time': datetime.datetime(2015, 2, 7, 13, 5, 27, 179997)}
+2015-02-07 21:05:52+0800 [ctrip_hotel] INFO: Spider closed (finished)

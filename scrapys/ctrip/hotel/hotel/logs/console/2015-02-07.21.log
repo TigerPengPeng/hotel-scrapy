@@ -1,0 +1,18 @@
+====================ctrip脚本参数====================
+scrapy_type: ctrip
+cityid: 21114
+log_file: 2015-02-07.21.log
+info_log: logs/info/2015-02-07.21.log
+console_log: logs/console/2015-02-07.21.log
+====================ctrip脚本参数====================
+爬虫ctrip_city成功
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:903: RuntimeWarning: DateTimeField ScrapyBatchItem.update_time received a naive datetime (2015-02-07 21:05:52.689418) while time zone support is active.
+  RuntimeWarning)
+
+爬虫ctrip_hotel成功
+====================发送邮件参数====================
+scrapy_type: ctrip
+log_file: 2015-02-07.21.log
+result:
+console_log: logs/console/2015-02-07.21.log
+====================发送邮件参数====================
