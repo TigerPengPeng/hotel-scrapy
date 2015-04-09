@@ -24,7 +24,7 @@ DEFAULT_REQUEST_HEADERS={
 }
 
 BOT_NAME = 'review'
-DOWNLOAD_DELAY = 0.3
+DOWNLOAD_DELAY = 2
 
 SPIDER_MODULES = ['review.spiders']
 NEWSPIDER_MODULE = 'review.spiders'
@@ -33,7 +33,7 @@ NEWSPIDER_MODULE = 'review.spiders'
 #USER_AGENT = 'review (+http://www.yourdomain.com)'
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
 
-ITEM_PIPELINES = { 
+ITEM_PIPELINES = {
     'review.pipelines.ReviewPipeline': 20
 }
 

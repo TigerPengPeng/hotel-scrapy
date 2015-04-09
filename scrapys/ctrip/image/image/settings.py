@@ -23,7 +23,7 @@ DEFAULT_REQUEST_HEADERS={
 }
 
 BOT_NAME = 'image'
-DOWNLOAD_DELAY = 0.3
+DOWNLOAD_DELAY = 2
 
 SPIDER_MODULES = ['image.spiders']
 NEWSPIDER_MODULE = 'image.spiders'
