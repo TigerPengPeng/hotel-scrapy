@@ -4,12 +4,12 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-def shingStr(pre_str,cmp_str):
+def shing_str(pre_str,cmp_str):
     if not pre_str or not cmp_str:
         return 0.0
     pre_vec=set();cmp_vec=set()
-    pre_str=dropSymbol(pre_str)
-    cmp_str=dropSymbol(cmp_str)
+    pre_str=drop_symbol(pre_str)
+    cmp_str=drop_symbol(cmp_str)
     try:
         pre_str=pre_str.decode("utf-8")
         cmp_str=cmp_str.decode("utf-8")
@@ -31,7 +31,7 @@ def shingStr(pre_str,cmp_str):
         return comNum/(allNum-comNum)
     else:
         return 0.0
-def dropSymbol(s):
+def drop_symbol(s):
     blackSet=set(["▪","●",".","–","(",")"," ","\t","（","）","-","?",",","，","•","·"])
     for sym in blackSet:
         s=s.replace(sym,"")
@@ -39,5 +39,5 @@ def dropSymbol(s):
 if __name__=="__main__":
     a="北京如家酒店"
     b="北京酒仙桥如家酒店"
-    print shingStr(a,b)
+    print shing_str(a,b)
 
