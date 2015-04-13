@@ -22,7 +22,7 @@ def get_abs(path):
 SECRET_KEY = '=p#y!1!$b=*&c28-(da_iw7_5(r&5$-7&a(0&6c328)17u#^dd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True 
+DEBUG = True
 
 TEMPLATE_DEBUG = True
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'app.elong',
     'app.ctrip',
     'app.scrapy_manager',
+    'common',
 )
 
 MIDDLEWARE_CLASSES = (

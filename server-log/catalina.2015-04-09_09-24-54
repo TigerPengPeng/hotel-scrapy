@@ -48,3 +48,8 @@
 [09/Apr/2015 09:36:59] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
 [09/Apr/2015 09:39:55] "GET /admin/scrapy_manager/sendemailitem/ HTTP/1.1" 200 4911
 [09/Apr/2015 09:39:55] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[09/Apr/2015 09:46:36] "GET /admin/ HTTP/1.1" 200 9989
+[09/Apr/2015 09:46:39] "GET /admin/ctrip/hotel/ HTTP/1.1" 200 56404
+[09/Apr/2015 09:46:39] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[09/Apr/2015 09:46:41] "GET /admin/ctrip/hotel/?city=%E7%8E%89%E6%A0%91 HTTP/1.1" 200 32399
+[09/Apr/2015 09:46:42] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
