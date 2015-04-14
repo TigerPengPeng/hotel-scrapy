@@ -5,7 +5,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "scrapy_project.settings")
 
 from app.ctrip.models import Hotel
 from app.elong.models import HotelLocal
-from common.property_loader import PropertyLoader
+from common.property_loader import ImportConfig
 from common.kdtree import KDTree
 from common.shingling import shing_str
 
@@ -14,11 +14,11 @@ class LocalImport:
     # constructor of LocalImport
     def __init__(self):
         # load property file
-        self.property = PropertyLoader("common/config.properties")
-        self.shingling_value = float(self.property.get_value("shingling_value"))
-        self.nearest_node_number = int(self.property.get_value("nearest_node_number"))
-        self.limit = int(self.property.get_value("database_query_limit"))
-        #print self.shingling_value, self.nearest_node_number, self.limit
+        config = ImportConfig()
+        self.shingling_value = config.shingling_value
+        self.nearest_node_number = config.nearest_node_number
+        self.limit = config.database_query_limit
+        print self.shingling_value, self.nearest_node_number, self.limit
 
         hotel_data_list = []
         skip = 0
@@ -87,7 +87,6 @@ class LocalImport:
 if __name__ == "__main__":
     ctrip_import = LocalImport()
     #ctrip_import.import_ctrip_data()
-    #query = ctrip_import.tree.query(query_point=(122, 52, "北京大酒店"), t=10)
-    #for item in query:
-    #    print item
+    #config = ImportConfig()
+    #print config.shingling_value, config.nearest_node_number, config.database_query_limit
 
