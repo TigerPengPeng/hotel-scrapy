@@ -3,9 +3,16 @@
 import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
+import os
+import os.path
 
 import ConfigParser
 from singleton import Singleton
+
+def get_file_path():
+    file_path = os.path.abspath(os.path.join(os.path.dirname(__file__)))
+    return file_path + "/"
+
 
 class PropertyLoader:
     def __init__(self, file_path):
@@ -20,7 +27,7 @@ class PropertyLoader:
 
 
 class ImportConfig(Singleton):
-    loader = PropertyLoader("config.properties")
+    loader = PropertyLoader(get_file_path() + "config.properties")
     shingling_value = float(loader.get_value("shingling_value"))
     nearest_node_number = int(loader.get_value("nearest_node_number"))
     database_query_limit = int(loader.get_value("database_query_limit"))

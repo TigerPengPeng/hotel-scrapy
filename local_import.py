@@ -85,8 +85,8 @@ class LocalImport:
 
 
 if __name__ == "__main__":
-    ctrip_import = LocalImport()
-    #ctrip_import.import_ctrip_data()
     #config = ImportConfig()
     #print config.shingling_value, config.nearest_node_number, config.database_query_limit
+    ctrip_import = LocalImport()
+    ctrip_import.import_ctrip_data()
 
