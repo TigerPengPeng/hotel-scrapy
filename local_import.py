@@ -8,6 +8,7 @@ from app.elong.models import HotelLocal
 from common.property_loader import ImportConfig
 from common.kdtree import KDTree
 from common.shingling import shing_str
+from common.longest_common_subsequence import longest_common_subsequence_percentage
 
 
 class LocalImport:
@@ -16,6 +17,7 @@ class LocalImport:
         # load property file
         config = ImportConfig()
         self.shingling_value = config.shingling_value
+        self.cls_value = config.cls_value
         self.nearest_node_number = config.nearest_node_number
         self.limit = config.database_query_limit
         print self.shingling_value, self.nearest_node_number, self.limit
@@ -50,11 +52,19 @@ class LocalImport:
             return None
 
 
-    # find target_node is duplicate in nearest_node_list
+    # find target_node is duplicate in nearest_node_list by shingling
     def shingling_in_list(self, target_node, nearest_node_list):
         for each_node in nearest_node_list:
             shinglingValue = shing_str(target_node[2], each_node[2])
             if shinglingValue >= self.shingling_value:
+                return False
+        return True
+
+    # find target_node is duplicate in nearest_node_list by cls
+    def cls_in_list(self, target_node, nearest_node_list):
+        for each_node in nearest_node_list:
+            cls_value = longest_common_subsequence_percentage(target_node[2], each_node[2])
+            if cls_value >= self.cls_value:
                 return False
         return True
 
@@ -67,8 +77,9 @@ class LocalImport:
             nearest_node_list = self.tree.query(query_point=tree_node, t=self.nearest_node_number)
             # using shingling algorithms to remove duplicate hotels
             import_flag = self.shingling_in_list(tree_node, nearest_node_list)
+            cls_flag = self.cls_in_list(tree_node, nearest_node_list)
             # this hotel is not in local database, add it to local database
-            if import_flag:
+            if import_flag and cls_flag:
                 # transfer it to local object and save it
                 local_hotel = HotelLocal.transfer_ctrip_hote_local(hotel)
                 local_hotel.save()

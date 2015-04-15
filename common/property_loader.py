@@ -29,10 +29,11 @@ class PropertyLoader:
 class ImportConfig(Singleton):
     loader = PropertyLoader(get_file_path() + "config.properties")
     shingling_value = float(loader.get_value("shingling_value"))
+    cls_value = float(loader.get_value("cls_value"))
     nearest_node_number = int(loader.get_value("nearest_node_number"))
     database_query_limit = int(loader.get_value("database_query_limit"))
 
 
 if __name__ == "__main__":
     config = ImportConfig()
-    print config.shingling_value, config.nearest_node_number, config.database_query_limit
+    print config.shingling_value, config.cls_value, config.nearest_node_number, config.database_query_limit
