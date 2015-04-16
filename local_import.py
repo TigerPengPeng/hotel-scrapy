@@ -17,10 +17,9 @@ class LocalImport:
         # load property file
         config = ImportConfig()
         self.shingling_value = config.shingling_value
-        self.cls_value = config.cls_value
+        self.lcs_value = config.lcs_value
         self.nearest_node_number = config.nearest_node_number
         self.limit = config.database_query_limit
-        print self.shingling_value, self.nearest_node_number, self.limit
 
         hotel_data_list = []
         skip = 0
@@ -57,16 +56,16 @@ class LocalImport:
         for each_node in nearest_node_list:
             shinglingValue = shing_str(target_node[2], each_node[2])
             if shinglingValue >= self.shingling_value:
-                return False
-        return True
+                return each_node
+        return None
 
-    # find target_node is duplicate in nearest_node_list by cls
-    def cls_in_list(self, target_node, nearest_node_list):
+    # find target_node is duplicate in nearest_node_list by lcs
+    def lcs_in_list(self, target_node, nearest_node_list):
         for each_node in nearest_node_list:
-            cls_value = longest_common_subsequence_percentage(target_node[2], each_node[2])
-            if cls_value >= self.cls_value:
-                return False
-        return True
+            lcs_value = longest_common_subsequence_percentage(target_node[2], each_node[2])
+            if lcs_value >= self.lcs_value:
+                return each_node
+        return None
 
     # import hotel list to local database
     def import_data(self, hotel_list):
@@ -76,13 +75,17 @@ class LocalImport:
                 continue
             nearest_node_list = self.tree.query(query_point=tree_node, t=self.nearest_node_number)
             # using shingling algorithms to remove duplicate hotels
-            import_flag = self.shingling_in_list(tree_node, nearest_node_list)
-            cls_flag = self.cls_in_list(tree_node, nearest_node_list)
+            shingling_node = self.shingling_in_list(tree_node, nearest_node_list)
+            # using longest common subsequence algorithms to remove duplicate hotels
+            lcs_node = self.lcs_in_list(tree_node, nearest_node_list)
             # this hotel is not in local database, add it to local database
-            if import_flag and cls_flag:
+            if shingling_node == None and lcs_node == None:
                 # transfer it to local object and save it
                 local_hotel = HotelLocal.transfer_ctrip_hote_local(hotel)
                 local_hotel.save()
+                print "save:" + tree_node[2]
+            else:
+                print "duplicate:" + tree_node [2]+ "; shingling_node:" + ("None" if shingling_node == None else shingling_node[2]) + "; lcs_node:" + ("None" if lcs_node == None else lcs_node[2])
 
     def import_ctrip_data(self):
         skip = 0
