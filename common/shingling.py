@@ -1,43 +1,36 @@
-﻿#!/usr/bin/python
+#!/usr/bin/python
 # encoding: utf-8
 import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-def shing_str(pre_str,cmp_str):
-    if not pre_str or not cmp_str:
+def shingling_value(str_x, str_y, w):
+    if not str_x or not str_y:
         return 0.0
-    pre_vec=set();cmp_vec=set()
-    pre_str=drop_symbol(pre_str)
-    cmp_str=drop_symbol(cmp_str)
-    try:
-        pre_str=pre_str.decode("utf-8")
-        cmp_str=cmp_str.decode("utf-8")
-    except:
-        return 0.0
-    i=0;j=0
-    while(i<len(pre_str)-1):
-        pre_vec.add(pre_str[i]+pre_str[i+1])
-        i=i+1
-    while(j<len(cmp_str)-1):
-        cmp_vec.add(cmp_str[j]+cmp_str[j+1])
-        j=j+1
-    comNum=allNum=0.0
-    for k in pre_vec:
-        if k in cmp_vec:
-            comNum+=1
-    allNum=len(pre_vec)+len(cmp_vec)
-    if allNum:
-        return comNum/(allNum-comNum)
-    else:
-        return 0.0
-def drop_symbol(s):
-    blackSet=set(["▪","●",".","–","(",")"," ","\t","（","）","-","?",",","，","•","·"])
-    for sym in blackSet:
-        s=s.replace(sym,"")
-    return s
-if __name__=="__main__":
-    a="北京如家酒店"
-    b="北京酒仙桥如家酒店"
-    print shing_str(a,b)
+    str_x = str_x.decode("utf-8")
+    str_y = str_y.decode("utf-8")
+    m = len(str_x)
+    n = len(str_y)
+    X = set()
+    Y = set()
+    for i in range(0, m-w+1):
+        sub_c = []
+        for k in range(i, i+w):
+            sub_c.append(str_x[k])
+        X.add("".join(sub_c))
+    for i in range(0, n-w+1):
+        sub_c = []
+        for k in range(i, i+w):
+            sub_c.append(str_y[k])
+        Y.add("".join(sub_c))
+    common = 0.0
+    for item in X:
+        if item in Y:
+            common += 1
+    return common / (len(X) + len(Y) - common)
 
+
+if __name__ == "__main__":
+    str_x = "北京如家酒店"
+    str_y = "北京酒仙桥如家酒店"
+    print shingling_value(str_x, str_y, 2)

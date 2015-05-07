@@ -4,8 +4,6 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-from shingling import drop_symbol
-
 
 class LongestCommonSubsequence():
     def __init__(self, str_x, str_y):
@@ -98,8 +96,6 @@ def max_length(str_x, str_y):
 def longest_common_subsequence_percentage(str_x, str_y):
     if not str_x or not str_y:
         return 0.0
-    str_x = drop_symbol(str_x)
-    str_y = drop_symbol(str_y)
     lcs = LongestCommonSubsequence(str_x, str_y)
     length = lcs.get_cls_length()
     return float(length) / max_length(str_x, str_y)

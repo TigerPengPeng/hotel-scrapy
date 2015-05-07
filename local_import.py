@@ -3,12 +3,13 @@
 import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "scrapy_project.settings")
 
-from app.ctrip.models import Hotel
+from app.ctrip.models import City, Hotel
 from app.elong.models import HotelLocal
 from common.property_loader import ImportConfig
 from common.kdtree import KDTree
-from common.shingling import shing_str
+from common.shingling import shingling_value
 from common.longest_common_subsequence import longest_common_subsequence_percentage
+from common.drop_symbol import DropSymbol
 
 
 class LocalImport:
@@ -21,6 +22,13 @@ class LocalImport:
         self.nearest_node_number = config.nearest_node_number
         self.limit = config.database_query_limit
 
+        # init drop symbol object, including drop special char and city name
+        drop_list = []
+        city_list = City.objects.all()
+        for city in city_list:
+            drop_list.append(city.name_ch)
+        self.drop_symbol = DropSymbol(drop_list)
+
         hotel_data_list = []
         skip = 0
         while (True):
@@ -32,6 +40,7 @@ class LocalImport:
             if len(hotel_local_list) < self.limit:
                 break
             skip = skip + self.limit
+        # init kdtree
         self.tree = KDTree.construct_from_data(hotel_data_list)
 
 
@@ -54,7 +63,7 @@ class LocalImport:
     # find target_node is duplicate in nearest_node_list by shingling
     def shingling_in_list(self, target_node, nearest_node_list):
         for each_node in nearest_node_list:
-            shinglingValue = shing_str(target_node[2], each_node[2])
+            shinglingValue = shingling_value(self.drop_symbol.drop(target_node[2]), self.drop_symbol.drop(each_node[2]), 2)
             if shinglingValue >= self.shingling_value:
                 return each_node
         return None
@@ -62,7 +71,7 @@ class LocalImport:
     # find target_node is duplicate in nearest_node_list by lcs
     def lcs_in_list(self, target_node, nearest_node_list):
         for each_node in nearest_node_list:
-            lcs_value = longest_common_subsequence_percentage(target_node[2], each_node[2])
+            lcs_value = longest_common_subsequence_percentage(self.drop_symbol.drop(target_node[2]), self.drop_symbol.drop(each_node[2]))
             if lcs_value >= self.lcs_value:
                 return each_node
         return None
@@ -102,5 +111,5 @@ if __name__ == "__main__":
     #config = ImportConfig()
     #print config.shingling_value, config.nearest_node_number, config.database_query_limit
     ctrip_import = LocalImport()
-    ctrip_import.import_ctrip_data()
+    #ctrip_import.import_ctrip_data()
 
