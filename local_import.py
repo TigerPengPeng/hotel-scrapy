@@ -6,10 +6,10 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "scrapy_project.settings")
 from app.ctrip.models import City, Hotel
 from app.elong.models import HotelLocal
 from common.property_loader import ImportConfig
-from common.kdtree import KDTree
 from common.shingling import shingling_value
 from common.longest_common_subsequence import longest_common_subsequence_percentage
 from common.drop_symbol import DropSymbol
+import common.kdtree as kdtree
 
 
 class LocalImport:
@@ -42,7 +42,7 @@ class LocalImport:
                 break
             skip = skip + self.limit
         # init kdtree
-        self.tree = KDTree.construct_from_data(hotel_data_list)
+        self.tree = kdtree.create(hotel_data_list)
 
 
     # split hotel scott point
@@ -61,20 +61,22 @@ class LocalImport:
             return None
 
 
-    # find target_node is duplicate in nearest_node_list by shingling
-    def shingling_in_list(self, target_node, nearest_node_list):
-        for each_node in nearest_node_list:
-            shinglingValue = shingling_value(self.drop_symbol.drop(target_node[2]), self.drop_symbol.drop(each_node[2]), self.shingling_w)
+    # find target_node is duplicate in nearest_kdnode_list by shingling
+    def shingling_in_list(self, target_node, nearest_kdnode_list):
+        for each_kdnode in nearest_kdnode_list:
+            shinglingValue = shingling_value(self.drop_symbol.drop(target_node[-1]),\
+                    self.drop_symbol.drop(each_kdnode[0].get_data_store()), self.shingling_w)
             if shinglingValue >= self.shingling_value:
-                return each_node
+                return each_kdnode[0].data
         return None
 
-    # find target_node is duplicate in nearest_node_list by lcs
-    def lcs_in_list(self, target_node, nearest_node_list):
-        for each_node in nearest_node_list:
-            lcs_value = longest_common_subsequence_percentage(self.drop_symbol.drop(target_node[2]), self.drop_symbol.drop(each_node[2]))
+    # find target_node is duplicate in nearest_kdnode_list by lcs
+    def lcs_in_list(self, target_node, nearest_kdnode_list):
+        for each_kdnode in nearest_kdnode_list:
+            lcs_value = longest_common_subsequence_percentage(self.drop_symbol.drop(target_node[-1]),\
+                    self.drop_symbol.drop(each_kdnode[0].get_data_store()))
             if lcs_value >= self.lcs_value:
-                return each_node
+                return each_kdnode[0].data
         return None
 
     # import hotel list to local database
@@ -83,19 +85,21 @@ class LocalImport:
             tree_node = self.transfer_tree_node(hotel)
             if tree_node == None:
                 continue
-            nearest_node_list = self.tree.query(query_point=tree_node, t=self.nearest_node_number)
+            nearest_kdnode_list = self.tree.search_knn(tree_node, self.nearest_node_number)
             # using shingling algorithms to remove duplicate hotels
-            shingling_node = self.shingling_in_list(tree_node, nearest_node_list)
+            shingling_node = self.shingling_in_list(tree_node, nearest_kdnode_list)
             # using longest common subsequence algorithms to remove duplicate hotels
-            lcs_node = self.lcs_in_list(tree_node, nearest_node_list)
+            lcs_node = self.lcs_in_list(tree_node, nearest_kdnode_list)
             # this hotel is not in local database, add it to local database
             if shingling_node == None and lcs_node == None:
                 # transfer it to local object and save it
                 local_hotel = HotelLocal.transfer_ctrip_hote_local(hotel)
                 local_hotel.save()
-                print "save:" + tree_node[2]
+                print "save:" + tree_node[-1]
             else:
-                print "duplicate:" + tree_node [2]+ "; shingling_node:" + ("None" if shingling_node == None else shingling_node[2]) + "; lcs_node:" + ("None" if lcs_node == None else lcs_node[2])
+                print "duplicate:" + tree_node[-1] + \
+                        "; shingling_node:" + ("None" if shingling_node == None else shingling_node[-1]) + \
+                        "; lcs_node:" + ("None" if lcs_node == None else lcs_node[-1])
 
     def import_ctrip_data(self):
         skip = 0
@@ -112,5 +116,5 @@ if __name__ == "__main__":
     #config = ImportConfig()
     #print config.shingling_value, config.nearest_node_number, config.database_query_limit
     ctrip_import = LocalImport()
-    #ctrip_import.import_ctrip_data()
+    ctrip_import.import_ctrip_data()
 

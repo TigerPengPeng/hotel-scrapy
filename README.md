@@ -3,6 +3,14 @@ basic spider demos to scrapy Ctrip web station
 
 @author:            peng.huang
 @email:             huangpengssdut@126.com
+@date:              2015-05-08
+@update content: 补充上次提交未更新的README文件以及重构KDTree
+1. 用Shingling算法和LCS算法判断字符串相似度之前，先去除字符串中的特殊字符和城市名称
+2. 重构KDTree
+
+
+@author:            peng.huang
+@email:             huangpengssdut@126.com
 @date:              2015-05-01
 @update content: 补充添加LCS算法对酒店名称判重
 1. 完成LCS算法部分
