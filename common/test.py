@@ -11,8 +11,5 @@ if __name__ == "__main__":
     for item in list:
         #print (type(item[0]))
         #print (type(item[1]))
-        print item[0].data
+        print item[0].data, item[0].axis
         print item[1]
-
-    for item in list:
-        print item[0].get_data_store()
