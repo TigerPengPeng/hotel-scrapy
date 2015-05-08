@@ -18,6 +18,7 @@ class LocalImport:
         # load property file
         config = ImportConfig()
         self.shingling_value = config.shingling_value
+        self.shingling_w = config.shingling_w
         self.lcs_value = config.lcs_value
         self.nearest_node_number = config.nearest_node_number
         self.limit = config.database_query_limit
@@ -63,7 +64,7 @@ class LocalImport:
     # find target_node is duplicate in nearest_node_list by shingling
     def shingling_in_list(self, target_node, nearest_node_list):
         for each_node in nearest_node_list:
-            shinglingValue = shingling_value(self.drop_symbol.drop(target_node[2]), self.drop_symbol.drop(each_node[2]), 2)
+            shinglingValue = shingling_value(self.drop_symbol.drop(target_node[2]), self.drop_symbol.drop(each_node[2]), self.shingling_w)
             if shinglingValue >= self.shingling_value:
                 return each_node
         return None
