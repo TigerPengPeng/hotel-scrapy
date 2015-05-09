@@ -10,6 +10,7 @@ from common.shingling import shingling_value
 from common.longest_common_subsequence import longest_common_subsequence_percentage
 from common.drop_symbol import DropSymbol
 import common.kdtree as kdtree
+import datetime
 
 
 class LocalImport:
@@ -30,6 +31,7 @@ class LocalImport:
             drop_list.append(city.name_ch)
         self.drop_symbol = DropSymbol(drop_list)
 
+        print "building kdtree..."
         hotel_data_list = []
         skip = 0
         while (True):
@@ -42,7 +44,11 @@ class LocalImport:
                 break
             skip = skip + self.limit
         # init kdtree
+        begin = datetime.datetime.now()
         self.tree = kdtree.create(hotel_data_list)
+        end = datetime.datetime.now()
+        print "building kdtree ending, begining at " + begin.strftime('%Y-%m-%d.%H:%M:%S') + \
+                " end at " + end.strftime('%Y-%m-%d.%H:%M:%S')
 
 
     # split hotel scott point
